@@ -1,5 +1,6 @@
 require 'capistrano/ext/multistage'
 require 'bundler/capistrano'
+require 'rvm/capistrano'
 
 set :application, "ITM API"
 set :repository,  "git@github.com:cfaivre/itm-api"
@@ -20,7 +21,7 @@ $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 # Load RVM's capistrano plugin.    
 require "rvm/capistrano"
 
-set :rvm_ruby_string, '1.9.3'
+#set :rvm_ruby_string, '1.9.3'
 set :rvm_type, :user  # Don't use system-wide RVM
 
 
