@@ -1,5 +1,5 @@
 set :application, "ITM API"
-set :repository,  "git@github.com:cfaivre/ships_admin"
+set :repository,  "git@github.com:cfaivre/itm-api"
 
 set :scm, :git
 
