@@ -1,6 +1,5 @@
 require 'capistrano/ext/multistage'
 require 'bundler/capistrano'
-require 'rvm/capistrano'
 
 set :application, "ITM API"
 set :repository,  "git@github.com:cfaivre/itm-api"
