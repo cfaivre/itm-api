@@ -8,6 +8,7 @@ gem 'rails', '3.1.3'
 gem 'sqlite3'
 gem 'activeadmin'
 gem 'capistrano'
+gem 'capistrano-ext'
 gem 'passenger'
 
 # Gems used only for assets and not required
