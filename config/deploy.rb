@@ -1,3 +1,6 @@
+require 'capistrano/ext/multistage'
+require 'bundler/capistrano'
+
 set :application, "ITM API"
 set :repository,  "git@github.com:cfaivre/itm-api"
 set :branch, "production"
