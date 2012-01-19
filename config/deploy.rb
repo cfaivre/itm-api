@@ -6,9 +6,9 @@ set :repository,  "git@github.com:cfaivre/itm-api"
 
 set :scm, :git
 
-set :user, "itmapi"
+set :user, "rails"
 set :port, 22
-set :deploy_to, "/srv/www/itm-api.de"
+set :deploy_to, "/var/www/rails"
 set :use_sudo, false
 set :keep_releases, 5
 set :bundle_flags, "--deployment --quiet --binstubs"
