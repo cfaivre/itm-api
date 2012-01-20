@@ -1,4 +1,6 @@
 ShipsAdmin::Application.routes.draw do
+  resources :ship_types
+
   resources :shipping_companies
 
   ActiveAdmin.routes(self)
