@@ -7,7 +7,7 @@ class CreateShipTypes < ActiveRecord::Migration
       t.timestamps
     end
     #Populate default data
-    ShipType.create :id => 1, :description => "Hochseekreuzfahrtschiff" :short_description => "Hochsee"
-    ShipType.create :id => 2, :description => "Flusskreuzfahrtschiff" :short_description => "Fluss"
+    ShipType.create :id => 1, :description => "Hochseekreuzfahrtschiff", :short_description => "Hochsee"
+    ShipType.create :id => 2, :description => "Flusskreuzfahrtschiff", :short_description => "Fluss"
   end
 end
