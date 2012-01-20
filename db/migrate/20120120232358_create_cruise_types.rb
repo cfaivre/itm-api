@@ -2,6 +2,7 @@ class CreateCruiseTypes < ActiveRecord::Migration
   def change
     create_table :cruise_types do |t|
       t.string :description
+      t.string :short_description
 
       t.timestamps
     end
