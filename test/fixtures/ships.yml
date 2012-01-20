@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  short_name: MyString
+  shipping_company_id: 1
+  shipping_type_id: 1
+  sid: 1
+
+two:
+  name: MyString
+  short_name: MyString
+  shipping_company_id: 1
+  shipping_type_id: 1
+  sid: 1

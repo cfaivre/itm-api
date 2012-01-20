@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @ship.name %>
+</p>
+
+<p>
+  <b>Short name:</b>
+  <%= @ship.short_name %>
+</p>
+
+<p>
+  <b>Shipping company:</b>
+  <%= @ship.shipping_company_id %>
+</p>
+
+<p>
+  <b>Shipping type:</b>
+  <%= @ship.shipping_type_id %>
+</p>
+
+<p>
+  <b>Sid:</b>
+  <%= @ship.sid %>
+</p>
+
+
+<%= link_to 'Edit', edit_ship_path(@ship) %> |
+<%= link_to 'Back', ships_path %>
