@@ -2,6 +2,7 @@ class CreateShipTypes < ActiveRecord::Migration
   def change
     create_table :ship_types do |t|
       t.string :description
+      t.string :short_description
 
       t.timestamps
     end
