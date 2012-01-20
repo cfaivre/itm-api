@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  cruise_type_id: 1
+  region_id: 1
+  zid: 1
+
+two:
+  name: MyString
+  cruise_type_id: 1
+  region_id: 1
+  zid: 1

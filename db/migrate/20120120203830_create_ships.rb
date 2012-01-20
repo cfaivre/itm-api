@@ -4,7 +4,7 @@ class CreateShips < ActiveRecord::Migration
       t.string :name
       t.string :short_name
       t.integer :shipping_company_id
-      t.integer :ship_type_id
+      t.integer :cruise_type_id
       t.integer :sid
 
       t.timestamps

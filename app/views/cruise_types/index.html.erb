@@ -1,0 +1,23 @@
+<h1>Listing cruise_types</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cruise_types.each do |cruise_type| %>
+  <tr>
+    <td><%= cruise_type.description %></td>
+    <td><%= link_to 'Show', cruise_type %></td>
+    <td><%= link_to 'Edit', edit_cruise_type_path(cruise_type) %></td>
+    <td><%= link_to 'Destroy', cruise_type, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cruise type', new_cruise_type_path %>

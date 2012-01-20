@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @area.name %>
+</p>
+
+<p>
+  <b>Cruise type:</b>
+  <%= @area.cruise_type_id %>
+</p>
+
+<p>
+  <b>Region:</b>
+  <%= @area.region_id %>
+</p>
+
+<p>
+  <b>Zid:</b>
+  <%= @area.zid %>
+</p>
+
+
+<%= link_to 'Edit', edit_area_path(@area) %> |
+<%= link_to 'Back', areas_path %>
