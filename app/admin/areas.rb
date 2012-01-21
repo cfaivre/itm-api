@@ -1,6 +1,6 @@
 ActiveAdmin.register Area do
   index do
-    column "Name", :short_name
+    column "Name", :name
     column "Cruise Type" do |ship|
       ship.cruise_type.short_description
     end
