@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120120232358) do
+ActiveRecord::Schema.define(:version => 20120123172222) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -86,8 +86,25 @@ ActiveRecord::Schema.define(:version => 20120120232358) do
     t.string   "name"
     t.string   "short_name"
     t.integer  "shipping_company_id"
-    t.integer  "ship_type_id"
+    t.integer  "cruise_type_id"
     t.integer  "sid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "top_offers", :force => true do |t|
+    t.string   "description"
+    t.string   "detailed_description"
+    t.integer  "minimum_number_of_days"
+    t.integer  "maximum_number_of_days"
+    t.decimal  "price"
+    t.string   "link_to_more_info"
+    t.date     "offer_start_date"
+    t.date     "offer_end_date"
+    t.date     "request_offer_from"
+    t.date     "request_offer_until"
+    t.integer  "shipping_company_id"
+    t.integer  "ship_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

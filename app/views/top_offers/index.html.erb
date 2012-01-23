@@ -1,0 +1,45 @@
+<h1>Listing top_offers</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Detailed description</th>
+    <th>Minimum number of days</th>
+    <th>Maximum number of days</th>
+    <th>Price</th>
+    <th>Link to more info</th>
+    <th>Offer start date</th>
+    <th>Offer end date</th>
+    <th>Request offer from</th>
+    <th>Request offer until</th>
+    <th>Shipping company</th>
+    <th>Ship</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @top_offers.each do |top_offer| %>
+  <tr>
+    <td><%= top_offer.description %></td>
+    <td><%= top_offer.detailed_description %></td>
+    <td><%= top_offer.minimum_number_of_days %></td>
+    <td><%= top_offer.maximum_number_of_days %></td>
+    <td><%= top_offer.price %></td>
+    <td><%= top_offer.link_to_more_info %></td>
+    <td><%= top_offer.offer_start_date %></td>
+    <td><%= top_offer.offer_end_date %></td>
+    <td><%= top_offer.request_offer_from %></td>
+    <td><%= top_offer.request_offer_until %></td>
+    <td><%= top_offer.shipping_company_id %></td>
+    <td><%= top_offer.ship_id %></td>
+    <td><%= link_to 'Show', top_offer %></td>
+    <td><%= link_to 'Edit', edit_top_offer_path(top_offer) %></td>
+    <td><%= link_to 'Destroy', top_offer, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Top offer', new_top_offer_path %>

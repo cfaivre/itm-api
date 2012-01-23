@@ -1,4 +1,6 @@
 ShipsAdmin::Application.routes.draw do
+  resources :top_offers
+
   resources :cruise_types
 
   resources :areas

@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @top_offer.description %>
+</p>
+
+<p>
+  <b>Detailed description:</b>
+  <%= @top_offer.detailed_description %>
+</p>
+
+<p>
+  <b>Minimum number of days:</b>
+  <%= @top_offer.minimum_number_of_days %>
+</p>
+
+<p>
+  <b>Maximum number of days:</b>
+  <%= @top_offer.maximum_number_of_days %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @top_offer.price %>
+</p>
+
+<p>
+  <b>Link to more info:</b>
+  <%= @top_offer.link_to_more_info %>
+</p>
+
+<p>
+  <b>Offer start date:</b>
+  <%= @top_offer.offer_start_date %>
+</p>
+
+<p>
+  <b>Offer end date:</b>
+  <%= @top_offer.offer_end_date %>
+</p>
+
+<p>
+  <b>Request offer from:</b>
+  <%= @top_offer.request_offer_from %>
+</p>
+
+<p>
+  <b>Request offer until:</b>
+  <%= @top_offer.request_offer_until %>
+</p>
+
+<p>
+  <b>Shipping company:</b>
+  <%= @top_offer.shipping_company_id %>
+</p>
+
+<p>
+  <b>Ship:</b>
+  <%= @top_offer.ship_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_top_offer_path(@top_offer) %> |
+<%= link_to 'Back', top_offers_path %>

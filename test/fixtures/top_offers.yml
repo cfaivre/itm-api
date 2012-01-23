@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  description: MyString
+  detailed_description: MyString
+  minimum_number_of_days: 1
+  maximum_number_of_days: 1
+  price: 9.99
+  link_to_more_info: MyString
+  offer_start_date: 2012-01-23
+  offer_end_date: 2012-01-23
+  request_offer_from: 2012-01-23
+  request_offer_until: 2012-01-23
+  shipping_company_id: 1
+  ship_id: 1
+
+two:
+  description: MyString
+  detailed_description: MyString
+  minimum_number_of_days: 1
+  maximum_number_of_days: 1
+  price: 9.99
+  link_to_more_info: MyString
+  offer_start_date: 2012-01-23
+  offer_end_date: 2012-01-23
+  request_offer_from: 2012-01-23
+  request_offer_until: 2012-01-23
+  shipping_company_id: 1
+  ship_id: 1
