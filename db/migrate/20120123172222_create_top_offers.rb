@@ -13,6 +13,7 @@ class CreateTopOffers < ActiveRecord::Migration
       t.date :request_offer_until
       t.integer :shipping_company_id
       t.integer :ship_id
+      t.has_attached_file :image
 
       t.timestamps
     end

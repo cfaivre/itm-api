@@ -11,6 +11,7 @@ gem 'capistrano'
 gem 'capistrano-ext'
 gem 'passenger'
 gem 'mysql2'
+gem 'paperclip'
 
 gem 'sass-rails',   '~> 3.1.5'
 
