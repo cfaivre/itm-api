@@ -20,7 +20,7 @@ ActiveAdmin.register TopOffer do
   show do |top_offer|
     attributes_table_for top_offer do
       [:description, :detailed_description, :minimum_number_of_days, :maximum_number_of_days,
-       :price, :link_to_more_info, :offer_start_date, :offer_end_date, :request_offer_from, :request_offer_until].each do |column|
+       :price, :link_to_more_info, :offer_valid_from, :offer_valid_until, :offer_active_from, :offer_active_until].each do |column|
           row column
         end
     end
