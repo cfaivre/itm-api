@@ -1,8 +1,8 @@
 class CreateTopOffers < ActiveRecord::Migration
   def change
     create_table :top_offers do |t|
+      t.string :title
       t.string :description
-      t.string :detailed_description
       t.integer :minimum_number_of_days
       t.integer :maximum_number_of_days
       t.decimal :price

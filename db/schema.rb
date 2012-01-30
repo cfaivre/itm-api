@@ -93,8 +93,8 @@ ActiveRecord::Schema.define(:version => 20120123172222) do
   end
 
   create_table "top_offers", :force => true do |t|
+    t.string   "title"
     t.string   "description"
-    t.string   "detailed_description"
     t.integer  "minimum_number_of_days"
     t.integer  "maximum_number_of_days"
     t.decimal  "price"

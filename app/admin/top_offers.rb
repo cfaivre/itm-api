@@ -1,8 +1,8 @@
 ActiveAdmin.register TopOffer do
 
   index do
+    column "Title", :title
     column "Description", :description
-    column "Detailed description", :detailed_description
     column "Minimum Number of Days", :minimum_number_of_days
     column "Maximum Number of Days", :maximum_number_of_days
     column "Price", :price
@@ -19,7 +19,7 @@ ActiveAdmin.register TopOffer do
 
   show do |top_offer|
     attributes_table_for top_offer do
-      [:description, :detailed_description, :minimum_number_of_days, :maximum_number_of_days,
+      [:title, :description, :minimum_number_of_days, :maximum_number_of_days,
        :price, :link_to_more_info, :offer_valid_from, :offer_valid_until, :offer_active_from, :offer_active_until].each do |column|
           row column
         end
@@ -32,10 +32,9 @@ ActiveAdmin.register TopOffer do
 
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Details" do
-      f.input :ship_id
       f.input :shipping_company_id
+      f.input :title
       f.input :description
-      f.input :detailed_description
       f.input :minimum_number_of_days
       f.input :maximum_number_of_days
       f.input :price

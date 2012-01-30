@@ -2,8 +2,8 @@
 
 <table>
   <tr>
+    <th>Title</th>
     <th>Description</th>
-    <th>Detailed description</th>
     <th>Minimum number of days</th>
     <th>Maximum number of days</th>
     <th>Price</th>
@@ -21,8 +21,8 @@
 
 <% @top_offers.each do |top_offer| %>
   <tr>
+    <td><%= top_offer.title %></td>
     <td><%= top_offer.description %></td>
-    <td><%= top_offer.detailed_description %></td>
     <td><%= top_offer.minimum_number_of_days %></td>
     <td><%= top_offer.maximum_number_of_days %></td>
     <td><%= top_offer.price %></td>
