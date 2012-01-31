@@ -4,6 +4,8 @@ class CreateShippingCompanies < ActiveRecord::Migration
     create_table :shipping_companies do |t|
       t.string :name
       t.integer :rid
+      t.integer :on_board_credit_percentage
+      t.text :on_board_credit_method_received
 
       t.timestamps
     end

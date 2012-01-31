@@ -2,16 +2,16 @@
 
 <table>
   <tr>
-    <th>Title</th>
+    <th>Title Headline</th>
+    <th>Title Offer</th>
     <th>Description</th>
-    <th>Minimum number of days</th>
-    <th>Maximum number of days</th>
+    <th>Duration</th>
     <th>Price</th>
     <th>Link to more info</th>
-    <th>Offer start date</th>
-    <th>Offer end date</th>
-    <th>Request offer from</th>
-    <th>Request offer until</th>
+    <th>Offer active from</th>
+    <th>Offer active until</th>
+    <th>Offer valid from</th>
+    <th>Offer valid until</th>
     <th>Shipping company</th>
     <th>Ship</th>
     <th></th>
@@ -21,10 +21,10 @@
 
 <% @top_offers.each do |top_offer| %>
   <tr>
-    <td><%= top_offer.title %></td>
+    <td><%= top_offer.title_headline %></td>
+    <td><%= top_offer.title_offer %></td>
     <td><%= top_offer.description %></td>
-    <td><%= top_offer.minimum_number_of_days %></td>
-    <td><%= top_offer.maximum_number_of_days %></td>
+    <td><%= top_offer.duration %></td>
     <td><%= top_offer.price %></td>
     <td><%= top_offer.link_to_more_info %></td>
     <td><%= top_offer.offer_active_from %></td>

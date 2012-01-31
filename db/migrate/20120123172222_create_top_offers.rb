@@ -1,10 +1,10 @@
 class CreateTopOffers < ActiveRecord::Migration
   def change
     create_table :top_offers do |t|
-      t.string :title
-      t.string :description
-      t.integer :minimum_number_of_days
-      t.integer :maximum_number_of_days
+      t.string :title_headline
+      t.string :title_offer
+      t.text :description
+      t.string :duration
       t.decimal :price
       t.text :link_to_more_info
       t.date :offer_active_from

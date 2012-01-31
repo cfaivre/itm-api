@@ -78,6 +78,8 @@ ActiveRecord::Schema.define(:version => 20120123172222) do
   create_table "shipping_companies", :force => true do |t|
     t.string   "name"
     t.integer  "rid"
+    t.integer  "on_board_credit_percentage"
+    t.text     "on_board_credit_method_received"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -93,10 +95,10 @@ ActiveRecord::Schema.define(:version => 20120123172222) do
   end
 
   create_table "top_offers", :force => true do |t|
-    t.string   "title"
-    t.string   "description"
-    t.integer  "minimum_number_of_days"
-    t.integer  "maximum_number_of_days"
+    t.string   "title_headline"
+    t.string   "title_offer"
+    t.text     "description"
+    t.string   "duration"
     t.decimal  "price"
     t.text     "link_to_more_info"
     t.date     "offer_active_from"
