@@ -106,7 +106,6 @@ ActiveRecord::Schema.define(:version => 20120123172222) do
     t.date     "offer_valid_from"
     t.date     "offer_valid_until"
     t.integer  "shipping_company_id"
-    t.integer  "ship_id"
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
