@@ -1,12 +1,12 @@
-class CreateTopOffers < ActiveRecord::Migration
+class CreateShippingCompanyTopOffers < ActiveRecord::Migration
   def change
-    create_table :top_offers do |t|
+    create_table :shipping_company_top_offers do |t|
       t.string :title_headline
       t.string :title_offer
       t.text :description
       t.string :duration
       t.decimal :price
-      t.text :link_to_more_info
+      t.string :link_to_more_info
       t.date :offer_active_from
       t.date :offer_active_until
       t.date :offer_valid_from

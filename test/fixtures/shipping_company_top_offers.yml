@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title_headline: MyString
+  title_offer: MyString
+  description: MyText
+  duration: MyString
+  price: 9.99
+  link_to_more_info: MyString
+  offer_active_from: 2012-02-06
+  offer_active_until: 2012-02-06
+  offer_valid_from: 2012-02-06
+  offer_valid_until: 2012-02-06
+  is_main_offer: 
+  shipping_company_id: 1
+
+two:
+  title_headline: MyString
+  title_offer: MyString
+  description: MyText
+  duration: MyString
+  price: 9.99
+  link_to_more_info: MyString
+  offer_active_from: 2012-02-06
+  offer_active_until: 2012-02-06
+  offer_valid_from: 2012-02-06
+  offer_valid_until: 2012-02-06
+  is_main_offer: 
+  shipping_company_id: 1

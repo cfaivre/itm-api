@@ -1,0 +1,45 @@
+<h1>Listing shipping_company_top_offers</h1>
+
+<table>
+  <tr>
+    <th>Title headline</th>
+    <th>Title offer</th>
+    <th>Description</th>
+    <th>Duration</th>
+    <th>Price</th>
+    <th>Link to more info</th>
+    <th>Offer active from</th>
+    <th>Offer active until</th>
+    <th>Offer valid from</th>
+    <th>Offer valid until</th>
+    <th>Is main offer</th>
+    <th>Shipping company</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @shipping_company_top_offers.each do |shipping_company_top_offer| %>
+  <tr>
+    <td><%= shipping_company_top_offer.title_headline %></td>
+    <td><%= shipping_company_top_offer.title_offer %></td>
+    <td><%= shipping_company_top_offer.description %></td>
+    <td><%= shipping_company_top_offer.duration %></td>
+    <td><%= shipping_company_top_offer.price %></td>
+    <td><%= shipping_company_top_offer.link_to_more_info %></td>
+    <td><%= shipping_company_top_offer.offer_active_from %></td>
+    <td><%= shipping_company_top_offer.offer_active_until %></td>
+    <td><%= shipping_company_top_offer.offer_valid_from %></td>
+    <td><%= shipping_company_top_offer.offer_valid_until %></td>
+    <td><%= shipping_company_top_offer.is_main_offer %></td>
+    <td><%= shipping_company_top_offer.shipping_company_id %></td>
+    <td><%= link_to 'Show', shipping_company_top_offer %></td>
+    <td><%= link_to 'Edit', edit_shipping_company_top_offer_path(shipping_company_top_offer) %></td>
+    <td><%= link_to 'Destroy', shipping_company_top_offer, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Shipping company top offer', new_shipping_company_top_offer_path %>

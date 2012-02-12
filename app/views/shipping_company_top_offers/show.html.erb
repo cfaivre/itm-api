@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title headline:</b>
+  <%= @shipping_company_top_offer.title_headline %>
+</p>
+
+<p>
+  <b>Title offer:</b>
+  <%= @shipping_company_top_offer.title_offer %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @shipping_company_top_offer.description %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @shipping_company_top_offer.duration %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @shipping_company_top_offer.price %>
+</p>
+
+<p>
+  <b>Link to more info:</b>
+  <%= @shipping_company_top_offer.link_to_more_info %>
+</p>
+
+<p>
+  <b>Offer active from:</b>
+  <%= @shipping_company_top_offer.offer_active_from %>
+</p>
+
+<p>
+  <b>Offer active until:</b>
+  <%= @shipping_company_top_offer.offer_active_until %>
+</p>
+
+<p>
+  <b>Offer valid from:</b>
+  <%= @shipping_company_top_offer.offer_valid_from %>
+</p>
+
+<p>
+  <b>Offer valid until:</b>
+  <%= @shipping_company_top_offer.offer_valid_until %>
+</p>
+
+<p>
+  <b>Is main offer:</b>
+  <%= @shipping_company_top_offer.is_main_offer %>
+</p>
+
+<p>
+  <b>Shipping company:</b>
+  <%= @shipping_company_top_offer.shipping_company_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_shipping_company_top_offer_path(@shipping_company_top_offer) %> |
+<%= link_to 'Back', shipping_company_top_offers_path %>

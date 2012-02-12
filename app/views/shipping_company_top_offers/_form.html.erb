@@ -1,10 +1,10 @@
-<%= form_for(@top_offer) do |f| %>
-  <% if @top_offer.errors.any? %>
+<%= form_for(@shipping_company_top_offer) do |f| %>
+  <% if @shipping_company_top_offer.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@top_offer.errors.count, "error") %> prohibited this top_offer from being saved:</h2>
+      <h2><%= pluralize(@shipping_company_top_offer.errors.count, "error") %> prohibited this shipping_company_top_offer from being saved:</h2>
 
       <ul>
-      <% @top_offer.errors.full_messages.each do |msg| %>
+      <% @shipping_company_top_offer.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_field :description %>
+    <%= f.text_area :description %>
   </div>
   <div class="field">
     <%= f.label :duration %><br />
@@ -45,11 +45,19 @@
   </div>
   <div class="field">
     <%= f.label :offer_valid_from %><br />
-    <%= f.date_select :offer_valid_until %>
+    <%= f.date_select :offer_valid_from %>
   </div>
   <div class="field">
     <%= f.label :offer_valid_until %><br />
     <%= f.date_select :offer_valid_until %>
+  </div>
+  <div class="field">
+    <%= f.label :is_main_offer %><br />
+    <%= f.text_field :is_main_offer %>
+  </div>
+  <div class="field">
+    <%= f.label :shipping_company_id %><br />
+    <%= f.number_field :shipping_company_id %>
   </div>
   <div class="actions">
     <%= f.submit %>

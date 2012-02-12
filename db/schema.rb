@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120123172222) do
+ActiveRecord::Schema.define(:version => 20120206182141) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -80,6 +80,27 @@ ActiveRecord::Schema.define(:version => 20120123172222) do
     t.integer  "rid"
     t.integer  "on_board_credit_percentage"
     t.text     "on_board_credit_method_received"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "shipping_company_top_offers", :force => true do |t|
+    t.string   "title_headline"
+    t.string   "title_offer"
+    t.text     "description"
+    t.string   "duration"
+    t.decimal  "price"
+    t.string   "link_to_more_info"
+    t.date     "offer_active_from"
+    t.date     "offer_active_until"
+    t.date     "offer_valid_from"
+    t.date     "offer_valid_until"
+    t.boolean  "is_main_offer"
+    t.integer  "shipping_company_id"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
