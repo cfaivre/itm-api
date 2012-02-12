@@ -32,7 +32,6 @@ ActiveAdmin.register TopOffer do
 
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Details" do
-      f.input :shipping_company, :as => :select, :collection => ShippingCompany.all
       f.input :title_headline
       f.input :title_offer
       f.input :description
