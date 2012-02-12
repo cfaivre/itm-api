@@ -4,6 +4,7 @@ class CreateShippingCompanyTopOffers < ActiveRecord::Migration
       t.string :title_headline
       t.string :title_offer
       t.text :description
+      t.integer :shipping_company_id
       t.string :duration
       t.decimal :price
       t.string :link_to_more_info
