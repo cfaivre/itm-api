@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  booking_id: 1
+  first_name: MyString
+  last_name: MyString
+  nationality: MyString
+  date_of_birth: 2012-02-13
+  place_of_birth: 2012-02-13
+  passport_number: MyString
+  passport_date_issued: 2012-02-13
+  passport_place_issued: MyString
+  passport_valid_until: 2012-02-13
+
+two:
+  booking_id: 1
+  first_name: MyString
+  last_name: MyString
+  nationality: MyString
+  date_of_birth: 2012-02-13
+  place_of_birth: 2012-02-13
+  passport_number: MyString
+  passport_date_issued: 2012-02-13
+  passport_place_issued: MyString
+  passport_valid_until: 2012-02-13

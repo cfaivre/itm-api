@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  customer_id: 1
+  booking_number: MyString
+  emergency_contact_first_name: MyString
+  emergency_contact_last_name: MyString
+  emergency_contact_telephone: MyString
+  ship_id: 1
+  travel_date: 2012-02-13
+  total_price: 9.99
+  how_to_get_at_ship: MyString
+  coming_from: MyString
+  eating_session: MyString
+  other: MyText
+
+two:
+  customer_id: 1
+  booking_number: MyString
+  emergency_contact_first_name: MyString
+  emergency_contact_last_name: MyString
+  emergency_contact_telephone: MyString
+  ship_id: 1
+  travel_date: 2012-02-13
+  total_price: 9.99
+  how_to_get_at_ship: MyString
+  coming_from: MyString
+  eating_session: MyString
+  other: MyText

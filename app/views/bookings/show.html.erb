@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Customer:</b>
+  <%= @booking.customer_id %>
+</p>
+
+<p>
+  <b>Booking number:</b>
+  <%= @booking.booking_number %>
+</p>
+
+<p>
+  <b>Emergency contact first name:</b>
+  <%= @booking.emergency_contact_first_name %>
+</p>
+
+<p>
+  <b>Emergency contact last name:</b>
+  <%= @booking.emergency_contact_last_name %>
+</p>
+
+<p>
+  <b>Emergency contact telephone:</b>
+  <%= @booking.emergency_contact_telephone %>
+</p>
+
+<p>
+  <b>Ship:</b>
+  <%= @booking.ship_id %>
+</p>
+
+<p>
+  <b>Travel date:</b>
+  <%= @booking.travel_date %>
+</p>
+
+<p>
+  <b>Total price:</b>
+  <%= @booking.total_price %>
+</p>
+
+<p>
+  <b>How to get at ship:</b>
+  <%= @booking.how_to_get_at_ship %>
+</p>
+
+<p>
+  <b>Coming from:</b>
+  <%= @booking.coming_from %>
+</p>
+
+<p>
+  <b>Eating session:</b>
+  <%= @booking.eating_session %>
+</p>
+
+<p>
+  <b>Other:</b>
+  <%= @booking.other %>
+</p>
+
+
+<%= link_to 'Edit', edit_booking_path(@booking) %> |
+<%= link_to 'Back', bookings_path %>

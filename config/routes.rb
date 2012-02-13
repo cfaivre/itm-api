@@ -1,4 +1,10 @@
 ShipsAdmin::Application.routes.draw do
+  resources :passengers
+
+  resources :bookings
+
+  resources :customers
+
   resources :shipping_company_top_offers
 
   resources :top_offers

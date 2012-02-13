@@ -1,0 +1,41 @@
+<h1>Listing passengers</h1>
+
+<table>
+  <tr>
+    <th>Booking</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Nationality</th>
+    <th>Date of birth</th>
+    <th>Place of birth</th>
+    <th>Passport number</th>
+    <th>Passport date issued</th>
+    <th>Passport place issued</th>
+    <th>Passport valid until</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @passengers.each do |passenger| %>
+  <tr>
+    <td><%= passenger.booking_id %></td>
+    <td><%= passenger.first_name %></td>
+    <td><%= passenger.last_name %></td>
+    <td><%= passenger.nationality %></td>
+    <td><%= passenger.date_of_birth %></td>
+    <td><%= passenger.place_of_birth %></td>
+    <td><%= passenger.passport_number %></td>
+    <td><%= passenger.passport_date_issued %></td>
+    <td><%= passenger.passport_place_issued %></td>
+    <td><%= passenger.passport_valid_until %></td>
+    <td><%= link_to 'Show', passenger %></td>
+    <td><%= link_to 'Edit', edit_passenger_path(passenger) %></td>
+    <td><%= link_to 'Destroy', passenger, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Passenger', new_passenger_path %>

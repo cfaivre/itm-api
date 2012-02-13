@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Booking:</b>
+  <%= @passenger.booking_id %>
+</p>
+
+<p>
+  <b>First name:</b>
+  <%= @passenger.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @passenger.last_name %>
+</p>
+
+<p>
+  <b>Nationality:</b>
+  <%= @passenger.nationality %>
+</p>
+
+<p>
+  <b>Date of birth:</b>
+  <%= @passenger.date_of_birth %>
+</p>
+
+<p>
+  <b>Place of birth:</b>
+  <%= @passenger.place_of_birth %>
+</p>
+
+<p>
+  <b>Passport number:</b>
+  <%= @passenger.passport_number %>
+</p>
+
+<p>
+  <b>Passport date issued:</b>
+  <%= @passenger.passport_date_issued %>
+</p>
+
+<p>
+  <b>Passport place issued:</b>
+  <%= @passenger.passport_place_issued %>
+</p>
+
+<p>
+  <b>Passport valid until:</b>
+  <%= @passenger.passport_valid_until %>
+</p>
+
+
+<%= link_to 'Edit', edit_passenger_path(@passenger) %> |
+<%= link_to 'Back', passengers_path %>

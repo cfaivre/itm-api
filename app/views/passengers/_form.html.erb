@@ -1,0 +1,57 @@
+<%= form_for(@passenger) do |f| %>
+  <% if @passenger.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@passenger.errors.count, "error") %> prohibited this passenger from being saved:</h2>
+
+      <ul>
+      <% @passenger.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :booking_id %><br />
+    <%= f.number_field :booking_id %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :nationality %><br />
+    <%= f.text_field :nationality %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_birth %><br />
+    <%= f.date_select :date_of_birth %>
+  </div>
+  <div class="field">
+    <%= f.label :place_of_birth %><br />
+    <%= f.date_select :place_of_birth %>
+  </div>
+  <div class="field">
+    <%= f.label :passport_number %><br />
+    <%= f.text_field :passport_number %>
+  </div>
+  <div class="field">
+    <%= f.label :passport_date_issued %><br />
+    <%= f.date_select :passport_date_issued %>
+  </div>
+  <div class="field">
+    <%= f.label :passport_place_issued %><br />
+    <%= f.text_field :passport_place_issued %>
+  </div>
+  <div class="field">
+    <%= f.label :passport_valid_until %><br />
+    <%= f.date_select :passport_valid_until %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

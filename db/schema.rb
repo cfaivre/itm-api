@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120206182141) do
+ActiveRecord::Schema.define(:version => 20120213202138) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -55,9 +55,62 @@ ActiveRecord::Schema.define(:version => 20120206182141) do
     t.datetime "updated_at"
   end
 
+  create_table "bookings", :force => true do |t|
+    t.integer  "customer_id"
+    t.string   "booking_number"
+    t.string   "emergency_contact_first_name"
+    t.string   "emergency_contact_last_name"
+    t.string   "emergency_contact_telephone"
+    t.integer  "ship_id"
+    t.date     "travel_date"
+    t.decimal  "total_price"
+    t.string   "how_to_get_at_ship"
+    t.string   "coming_from"
+    t.string   "eating_session"
+    t.text     "other"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "cruise_types", :force => true do |t|
     t.string   "description"
     t.string   "short_description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "customers", :force => true do |t|
+    t.string   "username"
+    t.string   "password"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "gender"
+    t.date     "date_of_birth"
+    t.string   "email_address"
+    t.string   "telephone"
+    t.string   "cellphone"
+    t.string   "fax"
+    t.string   "street_address"
+    t.string   "suburb"
+    t.string   "postcode"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "passengers", :force => true do |t|
+    t.integer  "booking_id"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "nationality"
+    t.date     "date_of_birth"
+    t.date     "place_of_birth"
+    t.string   "passport_number"
+    t.date     "passport_date_issued"
+    t.string   "passport_place_issued"
+    t.date     "passport_valid_until"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -88,6 +141,7 @@ ActiveRecord::Schema.define(:version => 20120206182141) do
     t.string   "title_headline"
     t.string   "title_offer"
     t.text     "description"
+    t.integer  "shipping_company_id"
     t.string   "duration"
     t.decimal  "price"
     t.string   "link_to_more_info"
@@ -96,7 +150,6 @@ ActiveRecord::Schema.define(:version => 20120206182141) do
     t.date     "offer_valid_from"
     t.date     "offer_valid_until"
     t.boolean  "is_main_offer"
-    t.integer  "shipping_company_id"
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
@@ -126,7 +179,7 @@ ActiveRecord::Schema.define(:version => 20120206182141) do
     t.date     "offer_active_until"
     t.date     "offer_valid_from"
     t.date     "offer_valid_until"
-    t.integer  "shipping_company_id"
+    t.boolean  "is_main_offer"
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"

@@ -1,0 +1,45 @@
+<h1>Listing bookings</h1>
+
+<table>
+  <tr>
+    <th>Customer</th>
+    <th>Booking number</th>
+    <th>Emergency contact first name</th>
+    <th>Emergency contact last name</th>
+    <th>Emergency contact telephone</th>
+    <th>Ship</th>
+    <th>Travel date</th>
+    <th>Total price</th>
+    <th>How to get at ship</th>
+    <th>Coming from</th>
+    <th>Eating session</th>
+    <th>Other</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bookings.each do |booking| %>
+  <tr>
+    <td><%= booking.customer_id %></td>
+    <td><%= booking.booking_number %></td>
+    <td><%= booking.emergency_contact_first_name %></td>
+    <td><%= booking.emergency_contact_last_name %></td>
+    <td><%= booking.emergency_contact_telephone %></td>
+    <td><%= booking.ship_id %></td>
+    <td><%= booking.travel_date %></td>
+    <td><%= booking.total_price %></td>
+    <td><%= booking.how_to_get_at_ship %></td>
+    <td><%= booking.coming_from %></td>
+    <td><%= booking.eating_session %></td>
+    <td><%= booking.other %></td>
+    <td><%= link_to 'Show', booking %></td>
+    <td><%= link_to 'Edit', edit_booking_path(booking) %></td>
+    <td><%= link_to 'Destroy', booking, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Booking', new_booking_path %>

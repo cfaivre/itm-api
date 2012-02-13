@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Username:</b>
+  <%= @customer.username %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @customer.password %>
+</p>
+
+<p>
+  <b>First name:</b>
+  <%= @customer.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @customer.last_name %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @customer.gender %>
+</p>
+
+<p>
+  <b>Date of birth:</b>
+  <%= @customer.date_of_birth %>
+</p>
+
+<p>
+  <b>Email address:</b>
+  <%= @customer.email_address %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%= @customer.telephone %>
+</p>
+
+<p>
+  <b>Cellphone:</b>
+  <%= @customer.cellphone %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%= @customer.fax %>
+</p>
+
+<p>
+  <b>Street address:</b>
+  <%= @customer.street_address %>
+</p>
+
+<p>
+  <b>Suburb:</b>
+  <%= @customer.suburb %>
+</p>
+
+<p>
+  <b>Postcode:</b>
+  <%= @customer.postcode %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @customer.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @customer.state %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @customer.country %>
+</p>
+
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>

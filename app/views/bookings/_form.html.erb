@@ -1,0 +1,65 @@
+<%= form_for(@booking) do |f| %>
+  <% if @booking.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@booking.errors.count, "error") %> prohibited this booking from being saved:</h2>
+
+      <ul>
+      <% @booking.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :customer_id %><br />
+    <%= f.number_field :customer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :booking_number %><br />
+    <%= f.text_field :booking_number %>
+  </div>
+  <div class="field">
+    <%= f.label :emergency_contact_first_name %><br />
+    <%= f.text_field :emergency_contact_first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :emergency_contact_last_name %><br />
+    <%= f.text_field :emergency_contact_last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :emergency_contact_telephone %><br />
+    <%= f.text_field :emergency_contact_telephone %>
+  </div>
+  <div class="field">
+    <%= f.label :ship_id %><br />
+    <%= f.number_field :ship_id %>
+  </div>
+  <div class="field">
+    <%= f.label :travel_date %><br />
+    <%= f.date_select :travel_date %>
+  </div>
+  <div class="field">
+    <%= f.label :total_price %><br />
+    <%= f.text_field :total_price %>
+  </div>
+  <div class="field">
+    <%= f.label :how_to_get_at_ship %><br />
+    <%= f.text_field :how_to_get_at_ship %>
+  </div>
+  <div class="field">
+    <%= f.label :coming_from %><br />
+    <%= f.text_field :coming_from %>
+  </div>
+  <div class="field">
+    <%= f.label :eating_session %><br />
+    <%= f.text_field :eating_session %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br />
+    <%= f.text_area :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
