@@ -1,4 +1,5 @@
 ActiveAdmin.register TopOffer do
+  menu :if => proc{ can?(:manage, TopOffer) }
 
   index do
     column "Title Headline", :title_headline

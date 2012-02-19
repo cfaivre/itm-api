@@ -13,6 +13,7 @@ gem 'passenger'
 gem 'mysql2'
 gem 'paperclip'
 gem "country-select"
+gem 'cancan'
 
 gem 'sass-rails',   '~> 3.1.5'
 

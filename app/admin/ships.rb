@@ -1,4 +1,5 @@
 ActiveAdmin.register Ship do
+  menu :if => proc{ can?(:manage, Ship) }
   index do
     column "Name", :short_name
     column "Shipping Company" do |ship|

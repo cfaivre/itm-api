@@ -1,4 +1,5 @@
 ActiveAdmin.register Area do
+  menu :if => proc{ can?(:manage, Area) }
   index do
     column "Name", :name
     column "Cruise Type" do |ship|

@@ -1,4 +1,5 @@
 ActiveAdmin.register Booking do
+  menu :if => proc{ can?(:manage, Booking) }
   form do |f|
     f.inputs "Details" do
       f.input :customer, :as => :select, :collection => Customer.all

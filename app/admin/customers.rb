@@ -1,4 +1,5 @@
 ActiveAdmin.register Customer do
+  menu :if => proc{ can?(:manage, Customer) }
 =begin
     form do |f|
     f.inputs "Details" do # customer's fields
